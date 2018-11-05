@@ -50,7 +50,6 @@ spec:
               mountPath: /var/www/html
       volumes:
         - name: wordpress-persistent-storage
-          # This AWS EBS volume must already exist.
           awsElasticBlockStore:
-            volumeID: vol-09c1a4eb5dabb21c5
+            volumeID: EBS_VOLUME_ID
             fsType: ext4
