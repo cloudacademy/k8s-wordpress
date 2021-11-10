@@ -47,7 +47,7 @@ spec:
             - name: mysql-persistent-storage
               mountPath: /var/lib/mysql
       nodeSelector:
-        topology.kubernetes.io/zone: EKS_WORKER_NODE_AZ              
+        topology.kubernetes.io/zone: EKS_WORKER_NODE_AZ
       volumes:
         - name: mysql-persistent-storage
           awsElasticBlockStore:
